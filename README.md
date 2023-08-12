@@ -77,9 +77,13 @@ I have automatic music playback set up in my pc startup, for that, link my hdd t
 ```bash
 ln -s ~/media/... ~/hdd
 ```
-I use `JetBrainsMono Nerd Font` for my mono space, and I use `Fira Sans` as the interface font.
-I use [Nord](https://addons.mozilla.org/en-US/firefox/addon/nord-firefox/) theme in Firefox.
-I use Materia Kde and GTK theme for my applications and Papirus as the icon theme. For cursors, I use the default Adwaita theme.
+I use 
+
+	`JetBrainsMono Nerd Font` for my mono space, and I use `Fira Sans` as the interface font.
+
+	[Nord](https://addons.mozilla.org/en-US/firefox/addon/nord-firefox/) theme in Firefox.
+
+	Materia Kde and GTK theme for my applications and Papirus as the icon theme. For cursors, the default Adwaita theme.
 ```bash
 sudo apt install materia-kde materia-gtk-theme papirus-icon-theme
 ```
