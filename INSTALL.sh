@@ -1,7 +1,7 @@
 #!/usr/bin/env bash 
 
-if [ "$EUID" -ne 0 ]; then
-  exit
+if [ "$EUID" -eq 0 ]; then
+  exit 1
 fi
 
 # for debian based only
