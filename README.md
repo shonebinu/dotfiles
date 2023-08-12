@@ -70,7 +70,23 @@ echo "[user]
 
 6. Additional system tray applet's and other programs to utilise the configs to the max.
 ```bash
-sudo apt install qalc 
+sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect kdeconnect-indicator nm-applet swayidle swaylock udiskie blueman-applet mpv
+pipx autotiling # for the dynamic tiling
+```
+I have automatic music playback set up in my pc startup, for that, link my hdd to my home directory 
+```bash
+ln -s ~/media/... ~/hdd
+```
+I use `JetBrainsMono Nerd Font` for my mono space, and I use `Fira Sans` as the interface font.
+I use [Nord](https://addons.mozilla.org/en-US/firefox/addon/nord-firefox/) theme in Firefox.
+I use Materia Kde and GTK theme for my applications and Papirus as the icon theme. For cursors, I use the default Adwaita theme.
+```bash
+sudo apt install materia-kde materia-gtk-theme papirus-icon-theme
+```
+
+For Fonts
+```
+sudo apt install fonts-noto fonts-noto-color-emoji fonts-font-awesome 
 ```
 
 I'm using Neovim [NvChad](https://github.com/NvChad/NvChad) config here, although I'm satisfied with this setup, I'm currently trying to do a NeoVim config of my own, and I'm also trying to learn Emacs in the side.
