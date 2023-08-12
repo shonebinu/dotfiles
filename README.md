@@ -70,7 +70,7 @@ echo "[user]
 
 6. Additional system tray applet's and other programs to utilise the configs to the max.
 ```bash
-sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect kdeconnect-indicator nm-applet swayidle swaylock udiskie blueman-applet mpv bat imv
+sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect kdeconnect-indicator nm-applet swayidle swaylock udiskie blueman-applet mpv bat imv zathura
 pipx autotiling # for the dynamic tiling
 ```
 I have automatic music playback set up in my pc startup, for that, link my hdd to my home directory 
@@ -102,3 +102,5 @@ sudo apt install fonts-noto fonts-noto-color-emoji fonts-font-awesome
 I'm using Neovim [NvChad](https://github.com/NvChad/NvChad) config here, although I'm satisfied with this setup, I'm currently trying to do a NeoVim config of my own, and I'm also trying to learn Emacs in the side.
 
 #### Note: I've made this repo to upload my configs and to easily reproduce my setup in my other systems. I'm not a pro, and some of these commands can cause errors in your system. So, please handle with care! Read the commands before executing them.
+
+#### Note: Many of the config's and shell scripts are copied from other Git repo's and I modified it to my taste, I'll add the credits soon. 
