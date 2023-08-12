@@ -1,6 +1,12 @@
 # dotfiles
 ## My personal dotfiles managed using GNU Stow
 
+Currently I use Sway window manager with two monitors (one horizontal + one vertical), here's a quick look.
+
+![Current Sway Window Manager Setup](./20230709_18:37:45_247915744.png)
+
+To replicate my setup, follow the given steps: 
+
 1. Install the packages
 ```bash
 sudo apt install zsh sway git wofi zsh stow mako-notifier waybar foot
@@ -60,10 +66,7 @@ echo "[user]
 	rebase = false" > ~/.gitconfig
 ```
 
-Currently I use Sway window manager with two monitors (one horizontal + one vertical), here's a quick look.
 
-
-![Current Sway Window Manager Setup](./20230709_18:37:45_247915744.png)
 
 
 I'm using Neovim [NvChad](https://github.com/NvChad/NvChad) config here, although I'm satisfied with this setup, I'm currently trying to do a NeoVim config of my own, and I'm also trying to learn Emacs in the side.
