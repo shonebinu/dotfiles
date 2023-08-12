@@ -79,7 +79,7 @@ echo "[user]
 sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect network-manager swayidle swaylock udiskie blueman mpv bat imv zathura neovim neofetch
 ```
 ```bash
-pipx autotiling # for the dynamic tiling
+pipx install autotiling # for the dynamic tiling
 ```
 
 I have automatic music playback set up in my pc startup, for that, link my hdd to my home directory 
