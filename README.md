@@ -76,7 +76,7 @@ echo "[user]
 
 6. Additional system tray applet's and other programs to utilise the configs to the max.
 ```bash
-sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect kdeconnect-indicator nm-applet swayidle swaylock udiskie blueman-applet mpv bat imv zathura neovim neofetch
+sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect network-manager swayidle swaylock udiskie blueman mpv bat imv zathura neovim neofetch
 ```
 ```bash
 pipx autotiling # for the dynamic tiling
