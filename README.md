@@ -40,6 +40,12 @@ If you don't have `user-dirs.dirs` and want all the user-dirs to have lowercase 
 stow dirs
 ```
 
+If you are using a single monitor(or laptop), run this command.
+```bash
+sed -i '/^output DVI-D-1 transform 270 pos 0,0$/d' ~/.config/sway/config
+sed -i '/^output HDMI-A-1 pos 1080,400$/d' ~/.config/sway/config
+```
+
 4. Change the shell to `zsh`
 ```bash
 chsh -s $(which zsh) # don't use sudo here
