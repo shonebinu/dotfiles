@@ -76,7 +76,7 @@ echo "[user]
 
 6. Additional system tray applet's and other programs to utilise the configs to the max.
 ```bash
-sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect network-manager swayidle swaylock udiskie blueman mpv bat imv zathura neovim neofetch
+sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect network-manager swayidle swaylock udiskie blueman mpv bat imv zathura neovim neofetch grim slurp wl-clipboard
 ```
 ```bash
 pipx install autotiling # for the dynamic tiling
@@ -86,6 +86,12 @@ I have automatic music playback set up in my pc startup, for that, link my hdd t
 ```bash
 ln -s ~/media/<path-to-hdd> ~/hdd
 ```
+
+Screenshots are made possibly by `grim`, `slurp` and `wl-clipboard`. Screenshots are saved in screenshot directory under pictures, the name of the screenshot is the time that the screenshot is taken.
+```bash
+mkdir -p pictures/screenshots
+```
+
 I use 
 
 `JetBrainsMono Nerd Font` for my mono space, and I use `Fira Sans` as the interface font.
