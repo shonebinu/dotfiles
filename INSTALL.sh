@@ -1,5 +1,9 @@
 #!/usr/bin/env bash 
 
+if [ "$EUID" -ne 0 ]; then
+  exit
+fi
+
 # for debian based only
 sudo apt install zsh sway git wofi zsh stow mako-notifier waybar foot
 
