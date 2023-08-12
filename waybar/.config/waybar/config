@@ -1,0 +1,131 @@
+[{
+    "layer": "top",
+    "height": 30,
+    "spacing": 4, 
+	"output": "HDMI-A-1", 
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["idle_inhibitor", "pulseaudio", "clock", "tray", "custom/power"],
+    
+    
+    "sway/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": false,
+		"format": "{name}",
+        "persistent_workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+        },
+    },
+    
+    
+    "sway/window": {
+        "max-length": 50
+    },
+
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": " ",
+            "deactivated": " "
+        }
+    },
+
+    "tray": {
+        "icon-size": 13,
+        "spacing": 10
+    },
+    
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": " {volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "custom/power": {
+        "format": "",
+	"on-click": "~/.local/bin/powermenu"
+    },
+
+    "clock": {
+            "format": "  {:%H:%M    %e %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "today-format": "<b>{}</b>",
+    }
+
+}, 
+
+{
+    "layer": "top",
+	"output": "DVI-D-1",
+	"height": 30,
+	"modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
+    "modules-center": [ "sway/window" ],
+    
+	"sway/window": {
+		"max-length": 30
+    },
+    
+
+    "sway/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": false,
+		"format": "{name}",
+        "persistent_workspaces": {
+			"4": [],
+			"5": [],
+        },
+    },
+    
+    
+    "sway/mode": {
+		"format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    
+   
+}]

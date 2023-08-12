@@ -1,0 +1,163 @@
+@import "catppuccin.css";
+
+* {
+    border: none;
+    border-radius: 3px;
+    min-height: 0;
+    margin: 0.2em 0.3em 0.2em 0.3em;
+}
+
+/* The whole bar */
+#waybar {
+    background: @base;
+    color: @text;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#clock,
+#custom-layout,
+#mode,
+#pulseaudio,
+#custom-alsa,
+#custom-pacman,
+#custom-weather,
+#custom-gpu,
+#tray,
+#backlight,
+#language,
+#custom-cpugovernor {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+}
+
+/* Each module that should blink */
+#mode,
+#memory,
+#temperature,
+#battery {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#mode { /* Shown current Sway mode (resize etc.) */
+    color: @light;
+    background: @mode;
+}
+
+/* Workspaces stuff */
+
+#workspaces {
+ /*   color: @text;
+    margin-right: 10px;*/
+}
+
+#workspaces button {
+    font-weight: bold; /* Somewhy the bar-wide setting is ignored*/
+    padding: 0;
+    opacity: 0.3;
+    background: none;
+    font-size: 1em;
+}
+
+#workspaces button.visible {
+    background: @surface0;
+    color: @text;
+}
+
+#workspaces button.focused {
+    background: @mantle;
+    color: @text;
+    opacity: 1;
+    padding: 0 0.4em;
+}
+
+#workspaces button.urgent {
+    border-color: #c9545d;
+    color: #c9545d;
+    opacity: 1;
+}
+
+#window {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-weight: normal;
+}
+#bluetooth {
+    background: @mantle;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 0.6em;
+}
+#custom-gpu {
+    background: @nord_bg;
+    font-weight: bold;
+    padding: 0 0.6em;
+}
+#custom-weather {
+    background: @mode;
+    font-weight: bold;
+    padding: 0 0.6em;
+}
+#custom-pacman {
+    background: @nord_light;
+    color: @nord_dark_font;
+    font-weight: bold;
+    padding: 0 0.6em;
+}
+#custom-scratchpad-indicator {
+    background: @nord_light;
+    color: @nord_dark_font;
+    font-weight: bold;
+    padding: 0 0.6em;
+}
+#idle_inhibitor {
+    background: @mode;
+    /*font-size: 1.6em;*/
+    font-weight: bold;
+    padding: 0 0.6em;
+}
+#custom-alsa {
+    background: @sound;
+}
+
+#custom-layout {
+    background: @layout;
+}
+
+#backlight {
+    background: @backlight;
+}
+
+#clock {
+    background: @mantle;
+    color: @text;
+}
+#clock.date {
+    background: @date;
+}
+
+#clock.time {
+    background: @mode;
+}
+
+#pulseaudio { /* Unsused but kept for those who needs it */
+    background: @mantle;
+    color: @text;
+}
+
+#pulseaudio.muted {
+    background: #BF616A;
+    color: #BF616A;
+    /* No styles */
+}
+#pulseaudio.source-muted {
+    background: #D08770;
+    color: @text;
+    /* No styles */
+}
+#tray {
+    background: @mantle;
+}

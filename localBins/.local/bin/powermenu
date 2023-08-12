@@ -1,0 +1,11 @@
+#! /bin/sh
+
+chosen=$(printf "  Power Off\n  Restart\n  Log Out\n  Lock" | wofi -d -i -H 210 )
+
+case "$chosen" in
+	"  Power Off") poweroff ;;
+	"  Restart") reboot ;;
+	"  Log Out") swaymsg exit ;;
+	"  Lock") swaylock -f -c 000000 ;;
+	*) exit 1 ;;
+esac

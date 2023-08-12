@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+chosen=$(printf "Play/Pause
+Next Track
+Previous Track
+Increase Volume
+Decrease Volume" | wofi -d -i -H 300)
+
+  case "$chosen" in 
+    "Play/Pause") playerctl --player=mpv play-pause ;;
+    "Next Track") playerctl --player=mpv next ;;
+    "Previous Track") playerctl --player=mpv previous ;;
+    "Increase Volume") playerctl --player=mpv volume .05+ ;;
+    "Decrease Volume") playerctl --player=mpv volume .05- ;;
+    *) exit 1 ;;
+  esac
+
