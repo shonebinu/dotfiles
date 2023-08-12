@@ -75,7 +75,7 @@ pipx autotiling # for the dynamic tiling
 ```
 I have automatic music playback set up in my pc startup, for that, link my hdd to my home directory 
 ```bash
-ln -s ~/media/... ~/hdd
+ln -s ~/media/<path-to-hdd> ~/hdd
 ```
 I use 
 
