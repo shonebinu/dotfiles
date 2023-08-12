@@ -29,6 +29,8 @@ for i in "${toStow[@]}"; do
   stow "$i"
 done
 ```
+If you are facing any errors, you might already have config's for these in your `.config` folder. Then you have to delete those, and rerun the command again.
+
 I've custom `user-dirs.dirs` config since I want my folders such as `Downloads`, `Documents` all lowercase, like `downloads` etc.
 
 If you aren't doing a base install, you might already have `user-dirs.dirs` in your config. And you might have already used the existing folders defined inside it, so it's best not to meddle in it.
@@ -66,7 +68,11 @@ echo "[user]
 	rebase = false" > ~/.gitconfig
 ```
 
-
-
+6. Additional system tray applet's and other programs to utilise the configs to the max.
+```bash
+sudo apt install qalc 
+```
 
 I'm using Neovim [NvChad](https://github.com/NvChad/NvChad) config here, although I'm satisfied with this setup, I'm currently trying to do a NeoVim config of my own, and I'm also trying to learn Emacs in the side.
+
+#### Note: I've made this repo to upload my configs and to easily reproduce my setup in my other systems. I'm not a pro, and some of these commands can cause errors in your system. So, please handle with care! Read the commands before executing them.
