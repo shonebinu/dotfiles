@@ -79,7 +79,7 @@ ln -s ~/media/... ~/hdd
 ```
 I use 
 
-JetBrainsMono Nerd Font` for my mono space, and I use `Fira Sans` as the interface font.
+`JetBrainsMono Nerd Font` for my mono space, and I use `Fira Sans` as the interface font.
 
 [Nord](https://addons.mozilla.org/en-US/firefox/addon/nord-firefox/) theme in Firefox.
 
