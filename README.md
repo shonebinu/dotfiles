@@ -70,7 +70,7 @@ echo "[user]
 
 6. Additional system tray applet's and other programs to utilise the configs to the max.
 ```bash
-sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect kdeconnect-indicator nm-applet swayidle swaylock udiskie blueman-applet mpv
+sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect kdeconnect-indicator nm-applet swayidle swaylock udiskie blueman-applet mpv bat imv
 pipx autotiling # for the dynamic tiling
 ```
 I have automatic music playback set up in my pc startup, for that, link my hdd to my home directory 
@@ -85,8 +85,14 @@ I use
 
 Materia Kde and GTK theme for my applications and Papirus as the icon theme. For cursors, the default Adwaita theme.
 ```bash
-sudo apt install materia-kde materia-gtk-theme papirus-icon-theme
+sudo apt install materia-kde materia-gtk-theme papirus-icon-theme qt5ct 
 ```
+Use `qt5ct` and `kvantum manager` to set the `qt` theme. If it doesn't work, make sure to put the following command in the `.zshenv`. (It's already set up in my config)
+```bash
+export QT_QPA_PLATFORMTHEME=qt5ct
+```
+
+Set `gtk` theme with [nwg-look](https://github.com/nwg-piotr/nwg-look)
 
 For Fonts
 ```
