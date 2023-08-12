@@ -1,6 +1,7 @@
 #!/usr/bin/env bash 
 
 if [ "$EUID" -eq 0 ]; then
+  echo "Please don't run it in sudo mode: it can cause issues when changing the shell."
   exit 1
 fi
 
@@ -17,6 +18,7 @@ done
 
 file=~/.config/user-dirs.dirs
 if [ -f "$file" ]; then
+  echo "My user dir's hasn't been copied over since your config has that file in it, and if i forcibly copy over, it can create a mess of directories."
   stow dirs   
 fi
 
@@ -45,3 +47,5 @@ echo "Changing shell to zsh: "
 if [ "$EUID" -ne 0 ]; then
   chsh -s $(which zsh)
 fi
+
+mkdir -p ~/home/$USER/.cache/zsh
