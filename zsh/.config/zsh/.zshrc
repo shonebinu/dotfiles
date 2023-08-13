@@ -21,6 +21,7 @@ alias sendu="kdeconnect-cli -n 'POCO X2' --share"
 alias sendt="kdeconnect-cli -n 'POCO X2' --share-text"
 alias bat=batcat
 alias imv=/usr/libexec/imv/imv
+alias hx=helix
 
 # My alias functions
 function 0x0() {
