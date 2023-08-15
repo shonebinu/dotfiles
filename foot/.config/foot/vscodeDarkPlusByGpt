@@ -1,0 +1,22 @@
+# Dark+ Theme Approximation for foot
+
+[colors]
+background=1e1e1e
+foreground=cccccc
+regular0=1e1e1e
+regular1=569cd6
+regular2=4ec9b0
+regular3=dcdcaa
+regular4=608b4e
+regular5=d69d85
+regular6=6a9fb5
+regular7=dcdcaa
+bright0=9cdcfe
+bright1=f44747
+bright2=ce9178
+bright3=00ff00
+bright4=ff00ff
+bright5=b5cea8
+bright6=00ffff
+bright7=ffffff
+

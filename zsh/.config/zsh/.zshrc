@@ -15,7 +15,6 @@ HISTFILE=~/.cache/zsh/history
 # My aliases
 alias ls='ls -tr --color=auto'
 alias grep='grep --color=auto'
-alias vim=nvim
 alias la='ls -la'
 alias sendu="kdeconnect-cli -n 'POCO X2' --share"
 alias sendt="kdeconnect-cli -n 'POCO X2' --share-text"
@@ -32,11 +31,11 @@ function help() {
   bash -c "help $*"
 }
 
-source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 # source ~/.config/zsh/zsh-you-should-use/zsh-you-should-use.plugin.zsh
 # source ~/.config/zsh/zsh-auto-notify/auto-notify.plugin.zsh
-source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 bindkey '^[[A' history-substring-search-up #up-arrow
