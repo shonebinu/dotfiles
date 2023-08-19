@@ -36,7 +36,7 @@ source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 # source ~/.config/zsh/zsh-auto-notify/auto-notify.plugin.zsh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ~/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 bindkey '^[[A' history-substring-search-up #up-arrow
 bindkey '^[[B' history-substring-search-down #down-arrow
