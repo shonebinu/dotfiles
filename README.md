@@ -7,19 +7,20 @@ Currently I use Sway window manager with two monitors (one horizontal + one vert
 
 To replicate my setup, follow the given steps: 
 
-1. Install the packages
+1. ### Install the packages
 ```bash
 sudo apt install zsh sway git wofi zsh stow mako-notifier waybar foot
 ```
 Use the package manager of your system, most of the package's names are same in all distros.
 
-2. Clone the Repo
+2. ### Clone the Repo
 ```bash
 git clone --recursive https://github.com/shonebinu/dotfiles.git ~/dotfiles
 ```
 For Stow to work per my setup, you have to put the dotfiles in the home directory.
 
-3. CD into the repo's root directory, then run `stow <foldername>` to restore the appropriate configuration of the same program. Please replace `<foldername>` with the actual name of the folder you want to use with the stow command.
+3. ### Use Stow!
+CD into the repo's root directory, then run `stow <foldername>` to restore the appropriate configuration of the same program. Please replace `<foldername>` with the actual name of the folder you want to use with the stow command.
 
 If you want to copy all my configs.
 ```bash
@@ -46,7 +47,7 @@ sed -i '/^output DVI-D-1 transform 270 pos 0,0$/d' ~/.config/sway/config
 sed -i '/^output HDMI-A-1 pos 1080,400$/d' ~/.config/sway/config
 ```
 
-4. Change the shell to `zsh`
+4. ### Change the shell to `zsh`
 ```bash
 chsh -s $(which zsh) # don't use sudo here
 ```
@@ -55,7 +56,7 @@ If you find any error related to `zsh` when exiting the terminal, run this comma
 mkdir -p ~/home/$USER/.cache/zsh
 ```
 
-5. Just for the sake of completeness, If you want to copy my Git config. 
+5. ### Just for the sake of completeness, If you want to copy my Git config. 
 ```bash
 echo "enter email: "
 read email 
@@ -74,9 +75,9 @@ echo "[user]
 	rebase = false" > ~/.gitconfig
 ```
 
-6. Additional system tray applet's and other programs to utilise the configs to the max.
+6. ### Additional system tray applet's and other programs to utilise the configs to the max.
 ```bash
-sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect network-manager swayidle swaylock udiskie blueman mpv bat imv zathura neovim neofetch grim slurp wl-clipboard swayimg
+sudo apt install qalc pipx mpv-mpris playerctl tmux kdeconnect network-manager swayidle swaylock udiskie blueman mpv bat imv zathura neovim neofetch grim slurp wl-clipboard swayimg wtype
 ```
 ```bash
 pipx install autotiling # for the dynamic tiling
@@ -110,11 +111,19 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 Set `gtk` theme with [nwg-look](https://github.com/nwg-piotr/nwg-look)
 
 For Fonts
-```
+```bash
 sudo apt install fonts-noto fonts-noto-color-emoji fonts-font-awesome 
 ```
 
-I'm using Neovim [NvChad](https://github.com/NvChad/NvChad) config here, although I'm satisfied with this setup, I'm currently trying to do a NeoVim config of my own, and I'm also trying to learn Emacs in the side.
+Cron Scheduling
+```bash
+crontab -e
+```
+Use the above command to edit the crontab config file 
+```bash
+0 22 * * * XDG_RUNTIME_DIR=/run/user/$(id -u) notify-send WARNING! "It's 10:00 PM, go sleep bitch!"
+```
+And add the above command to the cron file to remind me to sleep at 10:00 pm. 🙃
 
 #### Note: I've made this repo to upload my configs and to easily reproduce my setup in my other systems. I'm not a pro, and some of these commands can cause errors in your system. So, please handle with care! Read the commands before executing them.
 
