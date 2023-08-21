@@ -121,7 +121,7 @@ crontab -e
 ```
 Use the above command to edit the crontab config file 
 ```bash
-0 22 * * * XDG_RUNTIME_DIR=/run/user/$(id -u) notify-send WARNING! "It's 10:00 PM, go sleep bitch!"
+0 22 * * * XDG_RUNTIME_DIR=/run/user/$(id -u) notify-send WARNING! "It's 10:00 PM, go sleep bitch!" ; ssh poco termux-tts-speak "Shone, It's 10PM and now it's time to sleep"                      
 ```
 And add the above command to the cron file to remind me to sleep at 10:00 pm. 🙃
 
