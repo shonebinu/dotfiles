@@ -7,3 +7,6 @@
 [submodule "zsh/.config/zsh/zsh-autosuggestions"]
 	path = zsh/.config/zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "zsh/.config/zsh/plugins/z"]
+	path = zsh/.config/zsh/plugins/z
+	url = https://github.com/rupa/z.git
