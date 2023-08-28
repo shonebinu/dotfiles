@@ -35,6 +35,7 @@ function help() {
 source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 # source ~/.config/zsh/zsh-you-should-use/zsh-you-should-use.plugin.zsh
 # source ~/.config/zsh/zsh-auto-notify/auto-notify.plugin.zsh
+source ~/.config/zsh/plugins/z/z.sh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
