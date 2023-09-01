@@ -7,7 +7,7 @@
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
+set $mod Mod1
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -57,6 +57,7 @@ exec_always kdeconnect-indicator
 exec_always "nm-applet --indicator & blueman-applet & udiskie -t"
 # exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec "sleep 3; tmux new-session -d -s my_session 'mpv --no-video --shuffle --volume=25 ~/hdd/Music/backgrounds'"
+exec google-chrome
 
 for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set width 550 px height 600px, move position centre, move down 35
 

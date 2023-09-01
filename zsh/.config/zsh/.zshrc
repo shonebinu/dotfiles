@@ -22,6 +22,8 @@ alias bat=batcat
 alias imv=/usr/libexec/imv/imv
 alias hx=helix
 alias hs="cat ~/.cache/zsh/history | fzf | wl-copy"
+alias jo="hx ~/hdd/journal/$(date +%d_%m_%y).md"
+alias rsync="rsync --progress -avrxH  --delete"
 
 # My alias functions
 function 0x0() {
@@ -57,5 +59,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-path+=('/home/shone/.local/bin')
-export PATH
+export PATH=/home/shone/.local/bin:$PATH
