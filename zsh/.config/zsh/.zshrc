@@ -13,7 +13,8 @@ HISTFILE=~/.cache/zsh/history
 # In the ~/.zshenv set : ZDOTDIR=$HOME/.config/zsh
 
 # My aliases
-alias ls='ls -tr --color=auto'
+#alias ls='ls -tr --color=auto'
+alias ls='exa'
 alias grep='grep --color=auto'
 alias la='ls -la'
 alias sendu="kdeconnect-cli -n 'POCO X2' --share"
