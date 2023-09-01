@@ -15,7 +15,8 @@ HISTFILE=~/.cache/zsh/history
 # My aliases
 #alias ls='ls -tr --color=auto'
 alias ls='exa'
-alias grep='grep --color=auto'
+#alias grep='grep --color=auto'
+alias grep='rg'
 alias la='ls -la'
 alias sendu="kdeconnect-cli -n 'POCO X2' --share"
 alias sendt="kdeconnect-cli -n 'POCO X2' --share-text"
