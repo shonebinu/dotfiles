@@ -14,7 +14,7 @@ HISTFILE=~/.cache/zsh/history
 
 # My aliases
 #alias ls='ls -tr --color=auto'
-alias ls='exa'
+alias ls='exa -s=modified'
 #alias grep='grep --color=auto'
 alias grep='rg'
 alias la='ls -la'
