@@ -49,7 +49,7 @@ sed -i '/^output HDMI-A-1 pos 1080,400$/d' ~/.config/sway/config
 
 4. ### Change the shell to `zsh`
 ```bash
-chsh -s $(which zsh) # don't use sudo here
+chsh -s $(which zsh) # don't use sudo here, if flatpak isn't working correctly, change back to bash and set zsh only for the terminal session
 ```
 If you find any error related to `zsh` when exiting the terminal, run this command
 ```bash
