@@ -55,7 +55,7 @@ titlebar_border_thickness 0
 exec_always ./.local/bin/autotiling
 exec_always kdeconnect-indicator
 exec_always "nm-applet --indicator & blueman-applet & udiskie -t"
-# exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec "sleep 3; tmux new-session -d -s my_session 'mpv --no-video --shuffle --volume=25 ~/hdd/Music/backgrounds'"
 exec google-chrome
 
