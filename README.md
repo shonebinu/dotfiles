@@ -25,8 +25,7 @@ CD into the repo's root directory, then run `stow <foldername>` to restore the a
 If you want to copy all my configs.
 ```bash
 cd ~/dotfiles
-toStow=("wallpapers" "mako" "waybar" "foot" "localBins" "sway" "wofi" "zsh") 
-for i in "${toStow[@]}"; do 
+for i in "$(ls -d */)"; do 
   stow "$i"
 done
 ```
