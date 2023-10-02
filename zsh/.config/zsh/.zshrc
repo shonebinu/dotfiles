@@ -41,6 +41,10 @@ function help() {
   bash -c "help $*"
 }
 
+function cheat() {
+  curl cheat.sh/$1
+}
+
 source ~/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 # source ~/.config/zsh/zsh-you-should-use/zsh-you-should-use.plugin.zsh
 # source ~/.config/zsh/zsh-auto-notify/auto-notify.plugin.zsh
@@ -66,4 +70,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=/home/shone/.local/bin:$PATH
+path+=('/home/shone/.local/bin' '/sbin')
+export PATH

@@ -235,14 +235,17 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
+# SCREENSHOT
+bindsym Control+$mod+p exec grim -g "$(slurp)" - | swappy -f -
+
 # capture all screens to clipboard    
-bindsym Control+Alt+p exec grim - | wl-copy && wl-paste > ~/pictures/screenshots/$(date +"%Y%m%d_%T_%N").png 
+# bindsym Control+Alt+p exec grim - | wl-copy && wl-paste > ~/pictures/screenshots/$(date +"%Y%m%d_%T_%N").png 
     
 # capture the specified screen area to clipboard    
-bindsym Shift+Alt+p exec grim -g "$(slurp)" - | wl-copy && wl-paste > ~/pictures/screenshots/$(date +"%Y%m%d_%T_%N").png 
+# bindsym Shift+Alt+p exec grim -g "$(slurp)" - | wl-copy && wl-paste > ~/pictures/screenshots/$(date +"%Y%m%d_%T_%N").png 
     
 # capture the focused monitor to clipboard    
-bindsym Shift+Control+p exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy && wl-paste > ~/pictures/screenshots/$(date +"%Y%m%d_%T_%N").png
+# bindsym Shift+Control+p exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy && wl-paste > ~/pictures/screenshots/$(date +"%Y%m%d_%T_%N").png
 
 
 #
