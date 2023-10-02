@@ -110,6 +110,8 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 Set `gtk` theme with [nwg-look](https://github.com/nwg-piotr/nwg-look)
 
+Install [swappy](https://github.com/jtheoof/swappy) for snapshot edits 
+
 For Fonts
 ```bash
 sudo apt install fonts-noto fonts-noto-color-emoji fonts-font-awesome 
