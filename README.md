@@ -4,6 +4,7 @@
 Currently I use Sway window manager with two monitors (one horizontal + one vertical), here's a quick look.
 
 ![Current Sway Window Manager Setup](./20230709_18:37:45_247915744.png)
+![Sway, Wofi and Waybar](./swappy-20231023-105650.png)
 
 To replicate my setup, follow the given steps: 
 
