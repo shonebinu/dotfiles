@@ -1,0 +1,11 @@
+#!/bin/bash
+
+searchUrl="https://www.google.com/search?q="
+
+# Get user input into a file
+query=$(echo "" | wofi --show=dmenu -p "Search:" --cache-file /tmp/wofi_search_cache 2>/dev/null)
+
+# If the query is not empty
+if [[ -n "$query" ]]; then
+  xdg-open "$searchUrl$query"
+fi

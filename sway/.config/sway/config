@@ -105,6 +105,7 @@ exec swayidle -w \
     bindsym $mod+Shift+e exec ~/.local/bin/wofi-emoji
     bindsym $mod+Shift+f exec ~/.local/bin/wofi-calc.sh
     bindsym $mod+Shift+m exec ~/.local/bin/mpvMusicControl
+    bindsym $mod+Shift+g exec ~/.local/bin/google
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
