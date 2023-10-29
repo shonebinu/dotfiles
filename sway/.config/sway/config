@@ -25,7 +25,8 @@ include /etc/sway/config-vars.d/*
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg $(find /home/shone/hdd/favPapers/ -type f -print0 | shuf -zn1 | xargs -0 echo) fill
-output * bg ~/wallpapers/wallhaven-6dkg8w.png fill
+#output * bg ~/wallpapers/wallhaven-6dkg8w.png fill
+output * bg ~/wallpapers/wallhaven-gpd6v7.jpg fill
 
 # Example configuration:
 #
