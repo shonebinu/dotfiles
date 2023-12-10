@@ -8,6 +8,7 @@
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod1
+set $term wezterm
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -55,10 +56,11 @@ titlebar_border_thickness 0
 
 exec_always ./.local/bin/autotiling
 exec_always kdeconnect-indicator
-exec_always "nm-applet --indicator & blueman-applet & udiskie -t"
+exec "nm-applet --indicator & blueman-applet & udiskie -t"
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec "sleep 3; tmux new-session -d -s my_session 'mpv --no-video --shuffle --volume=25 ~/hdd/Music/backgrounds'"
 exec google-chrome
+exec xremap ~/.config/xremap/config.yml
 
 for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set width 550 px height 600px, move position centre, move down 35
 
@@ -94,7 +96,7 @@ exec swayidle -w \
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec foot
+    bindsym $mod+Return exec $term
 
     # Kill focused window
     bindsym $mod+Shift+q kill

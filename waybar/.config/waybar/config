@@ -13,9 +13,9 @@
 		"all-outputs": false,
 		"format": "{name}",
         "persistent_workspaces": {
-			"1": [],
-			"2": [],
-			"3": [],
+			//"1": [],
+			//"2": [],
+			//"3": [],
         },
     },
     
@@ -34,6 +34,19 @@
         "format-icons": ["", ""],
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
+    },
+
+    "mpris": {
+	"format": "DEFAULT: {player_icon} {dynamic}",
+	"format-paused": "DEFAULT: {status_icon} <i>{dynamic}</i>",
+	"player-icons": {
+		"default": "▶",
+		"mpv": "🎵"
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	// "ignored-players": ["firefox"]
     },
 
     "idle_inhibitor": {
@@ -110,8 +123,8 @@
 		"all-outputs": false,
 		"format": "{name}",
         "persistent_workspaces": {
-			"4": [],
-			"5": [],
+			//"4": [],
+			//"5": [],
         },
     },
     
